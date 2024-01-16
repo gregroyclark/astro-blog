@@ -46,6 +46,30 @@ h1 {
   ============================
 */
 
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  display: flex;
+  justify-content: space-between;
+  /* display: none;
+  margin: 0; */
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #0b69d4;
+}
+
 /*
   ============================
 
