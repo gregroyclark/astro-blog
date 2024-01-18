@@ -52,10 +52,24 @@ h1 {
   ============================
 */
 
+/* wraps Navigation & Hamburger */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* wraps nav-logo & nav-links divs */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+/* mobile-view hamburger element */
 .hamburger {
   padding-right: 20px;
   cursor: pointer;
   display: grid;
+  max-height: 50px;
   justify-content: end;
 }
 
@@ -67,9 +81,11 @@ h1 {
   background-color: black;
 }
 
-.navbar {
+/* top left link element, links to '/', either title or logo */
+.nav-logo {
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+  margin: 0;
 }
 
 .nav-logo a {
@@ -82,6 +98,7 @@ h1 {
   color: black;
 }
 
+/* all other navbar links */
 .nav-links {
   width: 100%;
   top: 5rem;
@@ -104,6 +121,7 @@ h1 {
   color: #0b69d4;
 }
 
+/* expands hamburger */
 .expanded {
   display: unset;
 }
