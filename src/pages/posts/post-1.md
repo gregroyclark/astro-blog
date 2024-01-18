@@ -1,14 +1,11 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'First Post'
-pubDate: 1-15-2024
+pubDate: 'Jan. 15th, 2024'
 description: 'This is the first post in my new Astro blog'
 author: 'Greg R Clark Jr'
 tags: ['astro', 'blog', 'proverbdesk', 'Clark Creative Services', 'CCS']
 ---
-
-# First Post
-
-Published on: Jan. 15th, 2024
 
 Welcome to _proverbdesk_, an interactive super blog by Greg Clark. ProverbDesk is designed to be a compendium of all my thoughts (I love to think, I love to write, I have cool stories I'd prefer to remember).
 
