@@ -59,11 +59,13 @@ h1 {
   width: 100%;
 }
 
-/* wraps nav-logo & nav-links divs */
+/* wraps Navigation (nav-logo & nav-links divs) */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
+
 /* mobile-view hamburger element */
 .hamburger {
   padding-right: 20px;
@@ -85,6 +87,7 @@ h1 {
 .nav-logo {
   display: flex;
   text-align: center;
+  align-items: center;
   margin: 0;
 }
 
@@ -127,6 +130,17 @@ h1 {
 }
 
 @media screen and (min-width: 636px) {
+  .nav-container {
+    display: block;
+    width: 100%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .nav-links {
     margin-left: 5em;
     display: block;
