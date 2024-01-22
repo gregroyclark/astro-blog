@@ -5,17 +5,15 @@ import BlogPost from '../../components/BlogPost.astro';
 export async function getStaticPaths() {
   const posts = await Astro.glob('../posts/*.md')
 
+  const uniqueTags = [...new Set(posts.map((post) => post.frontmatter.tags).flat())];
 
-  return [
-    { params: { tag: 'CCS'}, props: {posts: posts}},
-    { params: { tag: 'ccs'}, props: {posts: posts}},
-    { params: { tag: 'astro'}, props: {posts: posts}},
-    { params: { tag: 'successes'}, props: {posts: posts}},
-    { params: { tag: 'community'}, props: {posts: posts}},
-    { params: { tag: 'blogging'}, props: {posts: posts}},
-    { params: { tag: 'setbacks'}, props: {posts: posts}},
-    { params: { tag: 'learning in public'}, props: {posts: posts}},
-  ]
+  return uniqueTags.map((tag) => {
+    const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts }
+    };
+  });
 }
 
 const { tag } = Astro.params;
