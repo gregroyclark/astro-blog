@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Fourth Post
-author: Greg CLark
+author: Greg Clark
 description: 'This post will show up on its own!'
 pubDate: 1/21/2024
 tags: ['CCS']
