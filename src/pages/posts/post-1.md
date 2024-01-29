@@ -4,7 +4,7 @@ title: 'First Post'
 pubDate: 'Jan. 15th, 2024'
 description: 'This is the first post in my new Astro blog'
 author: 'Greg R Clark Jr'
-tags: ['CCS', 'ccs', 'blogging']
+tags: ['tech', 'music', 'theology', 'journal']
 ---
 
 Welcome to _proverbdesk_, an interactive super blog by Greg Clark. ProverbDesk is designed to be a compendium of all my thoughts (I love to think, I love to write, I have cool stories I'd prefer to remember).
